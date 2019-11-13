@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2019-11-08 21:26]]></item>
+	<item id="From"><![CDATA[Discuz! Board (https://addon.dismall.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[0]]></item>
+			<item id="name"><![CDATA[reCAPTCHA验证码]]></item>
+			<item id="identifier"><![CDATA[cdc_recaptcha]]></item>
+			<item id="description"><![CDATA[Google reCAPTCHA验证码，全球安全性最高的验证码服务之一，安全免费。本插件支持在中国大陆地区也能正常使用Google的验证码服务。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[cdc_recaptcha/]]></item>
+			<item id="copyright"><![CDATA[popcorner]]></item>
+			<item id="version"><![CDATA[1.0.1]]></item>
+			<item id="__modules">
+				<item id="seccode">
+					<item id="recaptcha">
+						<item id="name"><![CDATA[recaptcha]]></item>
+						<item id="displayorder"><![CDATA[0]]></item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[服务域名]]></item>
+				<item id="description"><![CDATA[此域名同时供用户和服务端使用，请务必仔细阅读选项。若出现无法正常工作的情况可以尝试更换域名解决。]]></item>
+				<item id="variable"><![CDATA[domain]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[1 = www.google.com（默认服务域名，但中国大陆地区不可用，官方指定）
+2 = www.recaptcha.net（全球服务域名，中国大陆地区可用，谷歌官方文档推荐使用）
+3 = recaptcha.net（全球服务域名，中国大陆地区可用，更简短）
+4 = recaptcha.google.cn（中国服务域名，直通谷歌中国，但中国大陆以外用户影响未知）]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[显示名称]]></item>
+				<item id="description"><![CDATA[验证码前方显示的文字名称，留空默认为“验证码”。]]></item>
+				<item id="variable"><![CDATA[cname]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[服务公钥]]></item>
+				<item id="description"><![CDATA[reCAPTCHA密钥的公钥部分，请到Google官网申请。https://www.google.com/recaptcha/admin]]></item>
+				<item id="variable"><![CDATA[pubkey]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[服务私钥]]></item>
+				<item id="description"><![CDATA[reCAPTCHA密钥的私钥部分，请到Google官网申请。请妥善保管，不要泄露！]]></item>
+				<item id="variable"><![CDATA[privkey]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[主题颜色]]></item>
+				<item id="description"><![CDATA[谷歌官方提供了2种验证码配色，可以根据自己的模板风格搭配选择。]]></item>
+				<item id="variable"><![CDATA[theme]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[0 = 浅色
+1 = 深色]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[尺寸大小]]></item>
+				<item id="description"><![CDATA[谷歌官方提供了2种验证码尺寸，可以根据自己的模板风格搭配选择。]]></item>
+				<item id="variable"><![CDATA[size]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[0 = 标准
+1 = 窄]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[切换顺序]]></item>
+				<item id="description"><![CDATA[正常情况下不要设置，此设置用于表单当中存在tab切换顺序错乱的情况下进行调整，填写数字即可。没有遇到类似问题请留空或填写0。]]></item>
+				<item id="variable"><![CDATA[tabindex]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[启用刷新]]></item>
+				<item id="description"><![CDATA[在极个别的情况下，部分用户可能会遇到验证码未正常加载或无法正常使用的情况，开启此按钮可以单独刷新验证码而不必刷新页面。]]></item>
+				<item id="variable"><![CDATA[refresh]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[显示语种]]></item>
+				<item id="description"><![CDATA[reCAPTCHA验证码默认显示的是用户浏览器首选语言，并非和论坛一致。如果想强行让用户看到简体中文，请在此填写zh-CN。其他语言代号：https://developers.google.cn/recaptcha/docs/language]]></item>
+				<item id="variable"><![CDATA[hlang]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="recaptcha"><![CDATA[reCAPTCHA验证码]]></item>
+				<item id="captcha"><![CDATA[验证码]]></item>
+				<item id="nokey_error"><![CDATA[您尚未配置验证码相关密钥，请配置后再使用！]]></item>
+			</item>
+		</item>
+        <item id="license"><![CDATA[[b]请注意：[/b]安装前请确认您有能力访问www.google.com，虽然本插件工作无需访问谷歌官网，但注册过程是需要的。
+
+安装后请及时访问谷歌官网注册（[url]https://www.google.com/recaptcha/admin[/url]），获取密钥并填入设置页，然后到后台-防灌水-验证设置，滚动到最下面选择reCAPTCHA验证码即可启用。
+注册流程：打开上述链接-谷歌账号登录-填写标签，类型选第二版，复选框（其他版本是无感认证，不适合Discuz使用），填写域名，勾选协议，提交。
+然后获得2个密钥，上面的是公钥，下面的是私钥，填写到插件设置页里保存就行了。
+如果这都没看懂，还需要图文教程的话，可以去应用中心那里看。
+
+Copyright 2019 popcorner
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+NOTICE: Removing or modifying any content about the author will be
+regarded as "remove attribution notices" and is prohibited,
+including name, description and relevant URLs.
+
+本程序使用Apache License 2.0协议授权，您必须遵守此协议才能安装本程序。
+本协议与Discuz授权协议无任何关联。
+上文为Apache协议授权的标准格式，如果看不懂可以搜索“详细介绍Apache License”（仅供理解，不能用于代替原文）
+特别声明：作者对“必须保留署名”的定义是不得去除程序内的任何一处作者署名，介绍及相关网址等作者个人信息，也不接受相关修改。]]></item>
+        <item id="intro"><![CDATA[本插件直接接入系统的验证码模块，因此验证相关设置请直接到系统后台-防灌水-验证设置，而不在插件这边。]]></item>
+	</item>
+</root>

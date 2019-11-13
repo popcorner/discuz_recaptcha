@@ -1,8 +1,8 @@
 <?php
 /**
  *	[reCAPTCHA(cdc_recaptcha.seccode_recaptcha)] (C)2019-2099 Powered by popcorner.
- *	Version: 1.0.0
- *	Date: 2019-8-8 16:51
+ *	Version: 1.0.1
+ *	Date: 2019-11-8 18:16
  *  Licensed under the Apache License, Version 2.0
  */
 
@@ -39,7 +39,7 @@ class seccode_recaptcha {
 		if(!$_G['cache']['plugin']['cdc_recaptcha']['pubkey'] || !$_G['cache']['plugin']['cdc_recaptcha']['privkey']) {
 			echo lang('plugin/cdc_recaptcha','nokey_error');
 		} else {
-			echo '<script src="'.$_G['siteurl'].'source/plugin/cdc_recaptcha/template/captcha.js" reload="1"></script>';
+			echo '<script src="'.$_G['siteurl'].'source/plugin/cdc_recaptcha/template/captcha'.substr(currentlang(),0,2).'.js" reload="1"></script>';
 			$gdomain = $_G['cache']['plugin']['cdc_recaptcha']['domain'];
 			$gdomain = $gdomain?intval($gdomain):2;
 			$return[0] = $this->domainlist[$gdomain];
@@ -50,7 +50,8 @@ class seccode_recaptcha {
 			$return[5] = intval($_G['cache']['plugin']['cdc_recaptcha']['tabindex']);
 			$return[6] = $_G['cache']['plugin']['cdc_recaptcha']['refresh']?true:false;
 			$return[7] = $_G['cache']['plugin']['cdc_recaptcha']['hlang'];
-			echo '<div id="recptc" class="'.$idhash.'" style="display:none;">'.json_encode($return).'</div>';
+			require_once DISCUZ_ROOT.'./source/plugin/mobile/json.class.php';
+			echo '<div id="recptc" class="'.$idhash.'" style="display:none;">'.CJSON::encode($return).'</div>';
 		}
 	}
 }

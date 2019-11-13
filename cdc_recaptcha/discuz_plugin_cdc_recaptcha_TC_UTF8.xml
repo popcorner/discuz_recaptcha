@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2019-11-08 21:26]]></item>
+	<item id="From"><![CDATA[Discuz! Board (https://addon.dismall.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[0]]></item>
+			<item id="name"><![CDATA[reCAPTCHA驗證碼]]></item>
+			<item id="identifier"><![CDATA[cdc_recaptcha]]></item>
+			<item id="description"><![CDATA[Google reCAPTCHA驗證碼，全球安全性最高的驗證碼服務之一，安全免費。]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[cdc_recaptcha/]]></item>
+			<item id="copyright"><![CDATA[popcorner]]></item>
+			<item id="version"><![CDATA[1.0.1]]></item>
+			<item id="__modules">
+				<item id="seccode">
+					<item id="recaptcha">
+						<item id="name"><![CDATA[recaptcha]]></item>
+						<item id="displayorder"><![CDATA[0]]></item>
+					</item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3,X3.1,X3.2,X3.3,X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[服務功能變數名稱]]></item>
+				<item id="description"><![CDATA[此功能變數名稱同時供使用者和服務端使用，請務必仔細閱讀選項。若出現無法正常工作的情況可以嘗試更換功能變數名稱解決。]]></item>
+				<item id="variable"><![CDATA[domain]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[1 = www.google.com（預設服務功能變數名稱，但中國大陸地區不可用，官方指定）
+2 = www.recaptcha.net（全球服務功能變數名稱，中國大陸地區可用，谷歌官方文檔推薦使用）
+3 = recaptcha.net（全球服務功能變數名稱，中國大陸地區可用，更簡短）
+4 = recaptcha.google.cn（中國服務功能變數名稱，直通谷歌中國，但中國大陸以外使用者影響未知）]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[顯示名稱]]></item>
+				<item id="description"><![CDATA[驗證碼前方顯示的文字名稱，留空預設為「驗證碼」。]]></item>
+				<item id="variable"><![CDATA[cname]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[服務公開金鑰]]></item>
+				<item id="description"><![CDATA[reCAPTCHA金鑰的公開金鑰部分，請到Google官網申請。https://www.google.com/recaptcha/admin]]></item>
+				<item id="variable"><![CDATA[pubkey]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[服務私密金鑰]]></item>
+				<item id="description"><![CDATA[reCAPTCHA金鑰的私密金鑰部分，請到Google官網申請。 請妥善保管，不要洩露！]]></item>
+				<item id="variable"><![CDATA[privkey]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[主題顏色]]></item>
+				<item id="description"><![CDATA[谷歌官方提供了2種驗證碼配色，可以根據自己的範本風格搭配選擇。]]></item>
+				<item id="variable"><![CDATA[theme]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[0 = 淺色
+1 = 深色]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[尺寸大小]]></item>
+				<item id="description"><![CDATA[谷歌官方提供了2種驗證碼尺寸，可以根據自己的範本風格搭配選擇。]]></item>
+				<item id="variable"><![CDATA[size]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[0 = 標準
+1 = 窄]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[切換順序]]></item>
+				<item id="description"><![CDATA[正常情況下不要設置，此設置用於表單當中存在tab切換順序錯亂的情況下進行調整，填寫數位即可。 沒有遇到類似問題請留空或填寫0。]]></item>
+				<item id="variable"><![CDATA[tabindex]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="7">
+				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[啟用刷新]]></item>
+				<item id="description"><![CDATA[在極個別的情況下，部分使用者可能會遇到驗證碼未正常載入或無法正常使用的情況，開啟此按鈕可以單獨刷新驗證碼而不必刷新頁面。]]></item>
+				<item id="variable"><![CDATA[refresh]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[顯示語種]]></item>
+				<item id="description"><![CDATA[reCAPTCHA驗證碼預設顯示的是使用者瀏覽器首選語言，並非和論壇一致。 如果想強行讓使用者看到繁體中文，請在此填寫zh-HK(香港)或zh-TW（臺灣）。 其他語言代號：https://developers.google.cn/recaptcha/docs/language]]></item>
+				<item id="variable"><![CDATA[hlang]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="recaptcha"><![CDATA[reCAPTCHA驗證碼]]></item>
+				<item id="captcha"><![CDATA[驗證碼]]></item>
+				<item id="nokey_error"><![CDATA[您尚未配置驗證碼相關金鑰，請配置後再使用！]]></item>
+			</item>
+		</item>
+        <item id="license"><![CDATA[[b]請注意：[/b]安裝前請確認您有能力訪問www.google.com，雖然本外掛程式工作無需訪問谷歌官網，但註冊過程是需要的。
+
+安裝後請及時訪問谷歌官網註冊（[url]https://www.google.com/recaptcha/admin[/url]），獲取金鑰並填入設置頁，然後到後臺-防灌水-驗證設置，滾動到最下面選擇reCAPTCHA驗證碼即可啟用。
+註冊流程：打開上述連結-谷歌帳號登錄-填寫標籤，類型選第二版，核取方塊（其他版本是無感認證，不適合Discuz使用），填寫功能變數名稱，勾選協定，提交。
+然後獲得2個金鑰，上面的是公開金鑰，下面的是私密金鑰，填寫到外掛程式設置頁裡保存就行了。
+如果這都沒看懂，還需要圖文教程的話，可以去應用中心那裡看。
+
+Copyright 2019 popcorner
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+NOTICE: Removing or modifying any content about the author will be
+regarded as "remove attribution notices" and is prohibited,
+including name, description and relevant URLs.
+
+本程式使用Apache License 2.0協定授權，您必須遵守此協定才能安裝本程式。
+本協定與Discuz授權協定無任何關聯。
+上文為Apache協定授權的標準格式，如果看不懂可以搜索「詳細介紹Apache License」（僅供理解，不能用於代替原文）
+特別聲明：作者對「必須保留署名」的定義是不得去除程式內的任何一處作者署名，介紹及相關網址等作者個人資訊，也不接受相關修改。]]></item>
+        <item id="intro"><![CDATA[本外掛程式直接接入系統的驗證碼模組，因此驗證相關設置請直接到系統後臺-防灌水-驗證設置，而不在外掛程式這邊。]]></item>
+	</item>
+</root>

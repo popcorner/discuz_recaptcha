@@ -2,7 +2,7 @@
 <root>
 	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
 	<item id="Version"><![CDATA[X3.4]]></item>
-	<item id="Time"><![CDATA[2019-08-09 03:11]]></item>
+	<item id="Time"><![CDATA[2019-11-08 21:26]]></item>
 	<item id="From"><![CDATA[Discuz! Board (https://addon.dismall.com/)]]></item>
 	<item id="Data">
 		<item id="plugin">
@@ -14,7 +14,7 @@
 			<item id="datatables"><![CDATA[]]></item>
 			<item id="directory"><![CDATA[cdc_recaptcha/]]></item>
 			<item id="copyright"><![CDATA[popcorner]]></item>
-			<item id="version"><![CDATA[1.0.0]]></item>
+			<item id="version"><![CDATA[1.0.1]]></item>
 			<item id="__modules">
 				<item id="seccode">
 					<item id="recaptcha">
@@ -36,7 +36,7 @@
 				<item id="extra"><![CDATA[1 = www.google.com（默认服务域名，但中国大陆地区不可用，官方指定）
 2 = www.recaptcha.net（全球服务域名，中国大陆地区可用，谷歌官方文档推荐使用）
 3 = recaptcha.net（全球服务域名，中国大陆地区可用，更简短）
-4 = recaptcha.google.cn（中国服务域名，直通谷歌中国，但国外用户影响未知）]]></item>
+4 = recaptcha.google.cn（中国服务域名，直通谷歌中国，但中国大陆以外用户影响未知）]]></item>
 			</item>
 			<item id="1">
 				<item id="displayorder"><![CDATA[1]]></item>
