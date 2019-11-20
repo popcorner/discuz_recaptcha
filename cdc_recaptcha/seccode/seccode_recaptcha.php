@@ -1,8 +1,8 @@
 <?php
 /**
  *	[reCAPTCHA(cdc_recaptcha.seccode_recaptcha)] (C)2019-2099 Powered by popcorner.
- *	Version: 1.0.1
- *	Date: 2019-11-8 18:16
+ *	Version: 1.0.2
+ *	Date: 2019-11-20 20:18
  *  Licensed under the Apache License, Version 2.0
  */
 
@@ -11,7 +11,7 @@ if(!defined('IN_DISCUZ')) {
 }
 class seccode_recaptcha {
 
-	public $version = '1.0.0';
+	public $version = '1.0.2';
 	public $name = 'recaptcha';
 	public $description = '';
 	public $copyright = 'popcorner';
@@ -20,6 +20,9 @@ class seccode_recaptcha {
 
 	public function check($value, $idhash) {
 		global $_G;
+		if(!isset($_G['cache']['plugin'])) {
+			loadcache('plugin');
+		}
 		if(!isset($_GET['g-recaptcha-response']) || !$_GET['g-recaptcha-response'] || !$_G['cache']['plugin']['cdc_recaptcha']['pubkey'] || !$_G['cache']['plugin']['cdc_recaptcha']['privkey']) {
 			return false;
 		}
@@ -36,6 +39,9 @@ class seccode_recaptcha {
 
 	public function make($idhash) {
 		global $_G;
+		if(!isset($_G['cache']['plugin'])) {
+			loadcache('plugin');
+		}
 		if(!$_G['cache']['plugin']['cdc_recaptcha']['pubkey'] || !$_G['cache']['plugin']['cdc_recaptcha']['privkey']) {
 			echo lang('plugin/cdc_recaptcha','nokey_error');
 		} else {

@@ -2,7 +2,7 @@
 <root>
 	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
 	<item id="Version"><![CDATA[X3.4]]></item>
-	<item id="Time"><![CDATA[2019-11-08 21:26]]></item>
+	<item id="Time"><![CDATA[2019-11-20 21:14]]></item>
 	<item id="From"><![CDATA[Discuz! Board (https://addon.dismall.com/)]]></item>
 	<item id="Data">
 		<item id="plugin">
@@ -14,7 +14,7 @@
 			<item id="datatables"><![CDATA[]]></item>
 			<item id="directory"><![CDATA[cdc_recaptcha/]]></item>
 			<item id="copyright"><![CDATA[popcorner]]></item>
-			<item id="version"><![CDATA[1.0.1]]></item>
+			<item id="version"><![CDATA[1.0.2]]></item>
 			<item id="__modules">
 				<item id="seccode">
 					<item id="recaptcha">
