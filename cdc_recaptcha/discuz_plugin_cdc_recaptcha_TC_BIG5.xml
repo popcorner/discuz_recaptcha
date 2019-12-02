@@ -2,7 +2,7 @@
 <root>
 	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
 	<item id="Version"><![CDATA[X3.4]]></item>
-	<item id="Time"><![CDATA[2019-11-20 21:14]]></item>
+	<item id="Time"><![CDATA[2019-12-02 16:05]]></item>
 	<item id="From"><![CDATA[Discuz! Board (https://addon.dismall.com/)]]></item>
 	<item id="Data">
 		<item id="plugin">
@@ -14,8 +14,34 @@
 			<item id="datatables"><![CDATA[]]></item>
 			<item id="directory"><![CDATA[cdc_recaptcha/]]></item>
 			<item id="copyright"><![CDATA[popcorner]]></item>
-			<item id="version"><![CDATA[1.0.2]]></item>
+			<item id="version"><![CDATA[1.1.0]]></item>
 			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[cache]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
 				<item id="seccode">
 					<item id="recaptcha">
 						<item id="name"><![CDATA[recaptcha]]></item>
@@ -67,6 +93,16 @@
 			</item>
 			<item id="4">
 				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[啟用手機]]></item>
+				<item id="description"><![CDATA[開啟此開關可以讓系統自帶的手機標準版和觸屏版顯示出驗證碼。 不使用手機版的站可以關閉此開關。
+僅提供基本的可用性，且無法保證可以匹配協力廠商手機版。]]></item>
+				<item id="variable"><![CDATA[usemobile]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
 				<item id="title"><![CDATA[主題顏色]]></item>
 				<item id="description"><![CDATA[谷歌官方提供了2種驗證碼配色，可以根據自己的範本風格搭配選擇。]]></item>
 				<item id="variable"><![CDATA[theme]]></item>
@@ -75,8 +111,8 @@
 				<item id="extra"><![CDATA[0 = 淺色
 1 = 深色]]></item>
 			</item>
-			<item id="5">
-				<item id="displayorder"><![CDATA[5]]></item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
 				<item id="title"><![CDATA[尺寸大小]]></item>
 				<item id="description"><![CDATA[谷歌官方提供了2種驗證碼尺寸，可以根據自己的範本風格搭配選擇。]]></item>
 				<item id="variable"><![CDATA[size]]></item>
@@ -85,31 +121,116 @@
 				<item id="extra"><![CDATA[0 = 標準
 1 = 窄]]></item>
 			</item>
-			<item id="6">
-				<item id="displayorder"><![CDATA[6]]></item>
-				<item id="title"><![CDATA[切換順序]]></item>
-				<item id="description"><![CDATA[正常情況下不要設置，此設置用於表單當中存在tab切換順序錯亂的情況下進行調整，填寫數位即可。 沒有遇到類似問題請留空或填寫0。]]></item>
-				<item id="variable"><![CDATA[tabindex]]></item>
-				<item id="type"><![CDATA[number]]></item>
-				<item id="value"><![CDATA[0]]></item>
-				<item id="extra"><![CDATA[]]></item>
-			</item>
 			<item id="7">
 				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[載入圖示]]></item>
+				<item id="description"><![CDATA[開啟此項，載入過程當中將會顯示一個載入動畫圖標]]></item>
+				<item id="variable"><![CDATA[loadicon]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[0 = 不顯示
+1 = 顯示
+2 = 超時以後繼續顯示]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[說明圖示]]></item>
+				<item id="description"><![CDATA[開啟此項，將會顯示一個說明圖示，圖示的具體作用由下面的配置項決定。]]></item>
+				<item id="variable"><![CDATA[helpicon]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[0 = 不顯示
+1 = 始終顯示
+2 = 載入超時後顯示]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[說明類型]]></item>
+				<item id="description"><![CDATA[選擇說明圖示的作用，可以是一個連結，也可以是一段文字通過彈窗的方式展現。
+甚至可以指向顯示彈窗，點擊觸發連結。]]></item>
+				<item id="variable"><![CDATA[helptype]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[0 = 可點擊的連結
+1 = 滑鼠指向彈窗提示
+2 = 滑鼠點擊彈窗提示
+3 = 彈窗連結我全都要]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[說明內容]]></item>
+				<item id="description"><![CDATA[當說明類型包含彈窗時，彈窗內會顯示在此填寫的文字內容。
+手機版不支援此功能（又沒有滑鼠嘛）]]></item>
+				<item id="variable"><![CDATA[helpcont]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[點此查看說明]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[說明連結]]></item>
+				<item id="description"><![CDATA[當說明類型包含連結時，點擊會跳轉到在此填寫的連結位置。 站外連結需要包含HTTP或HTTPs開頭]]></item>
+				<item id="variable"><![CDATA[helplink]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[misc.php?mod=faq]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[顯示語種]]></item>
+				<item id="description"><![CDATA[reCAPTCHA驗證碼預設顯示的是使用者瀏覽器首選語言，並非和論壇一致。 如果想強行讓使用者看到繁體中文，請在此填寫zh-HK(香港)或zh-TW（臺灣）。 
+其他語言代號：https://developers.google.cn/recaptcha/docs/language]]></item>
+				<item id="variable"><![CDATA[hlang]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[13]]></item>
 				<item id="title"><![CDATA[啟用刷新]]></item>
-				<item id="description"><![CDATA[在極個別的情況下，部分使用者可能會遇到驗證碼未正常載入或無法正常使用的情況，開啟此按鈕可以單獨刷新驗證碼而不必刷新頁面。]]></item>
+				<item id="description"><![CDATA[在極個別的情況下，部分使用者可能會遇到驗證碼未正常載入或無法正常使用的情況，開啟此按鈕可以單獨刷新驗證碼而不必刷新頁面。
+手機版不支援此功能。]]></item>
 				<item id="variable"><![CDATA[refresh]]></item>
 				<item id="type"><![CDATA[radio]]></item>
 				<item id="value"><![CDATA[0]]></item>
 				<item id="extra"><![CDATA[]]></item>
 			</item>
-			<item id="8">
-				<item id="displayorder"><![CDATA[8]]></item>
-				<item id="title"><![CDATA[顯示語種]]></item>
-				<item id="description"><![CDATA[reCAPTCHA驗證碼預設顯示的是使用者瀏覽器首選語言，並非和論壇一致。 如果想強行讓使用者看到繁體中文，請在此填寫zh-HK(香港)或zh-TW（臺灣）。 其他語言代號：https://developers.google.cn/recaptcha/docs/language]]></item>
-				<item id="variable"><![CDATA[hlang]]></item>
-				<item id="type"><![CDATA[text]]></item>
-				<item id="value"><![CDATA[]]></item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[錯誤提示]]></item>
+				<item id="description"><![CDATA[個別使用者遇到載入不出驗證碼的情況時，您可以在此輸入一段內容展示給這些使用者看。
+或者在此告知使用者解決問題的辦法（如關閉代理）]]></item>
+				<item id="variable"><![CDATA[errormsg]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[Google reCAPTCHA 驗證碼]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[內容格式]]></item>
+				<item id="description"><![CDATA[錯誤提示的內容格式，可以為純文字或HTML。]]></item>
+				<item id="variable"><![CDATA[msgtype]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[0 = 純文字
+1 = HTML]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[報錯延時]]></item>
+				<item id="description"><![CDATA[單位為毫秒（1000毫秒=1秒），超過此時間將會向使用者顯示出報錯資訊。 您也可以設置為0讓資訊立即顯示出來。]]></item>
+				<item id="variable"><![CDATA[delaytime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[2000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[切換順序]]></item>
+				<item id="description"><![CDATA[正常情況下不要設置，此設置用於表單當中存在tab切換順序錯亂的情況下進行調整，填寫數位即可。 沒有遇到類似問題請留空或填寫0。]]></item>
+				<item id="variable"><![CDATA[tabindex]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
 				<item id="extra"><![CDATA[]]></item>
 			</item>
 		</item>
@@ -118,6 +239,7 @@
 				<item id="recaptcha"><![CDATA[reCAPTCHA驗證碼]]></item>
 				<item id="captcha"><![CDATA[驗證碼]]></item>
 				<item id="nokey_error"><![CDATA[您尚未配置驗證碼相關金鑰，請配置後再使用！]]></item>
+				<item id="noie"><![CDATA[您的瀏覽器版本過低，無法載入reCAPTCHA驗證碼，建議使用非IE瀏覽器。]]></item>
 			</item>
 		</item>
         <item id="license"><![CDATA[[b]請注意：[/b]安裝前請確認您有能力訪問www.google.com，雖然本外掛程式工作無需訪問谷歌官網，但註冊過程是需要的。

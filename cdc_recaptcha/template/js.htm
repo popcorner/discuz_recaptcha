@@ -1,0 +1,24 @@
+(function () {
+	var idhash = $('recptc').className;
+	var showid = 'seccode_' + idhash;
+	var onloadid = 'grecol_' + idhash;
+	if (BROWSER.ie && BROWSER.ie < 10) {
+		$('v' + showid).innerHTML = '{$recp[noie]}';
+	} else {
+		var data = $('recptc').innerText;
+		appendscript('{$recp[gurl]}', '', 1);
+		var sectpl = seccheck_tpl[idhash] != '' ? seccheck_tpl[idhash].replace(/<hash>/g, 'code' + idhash).replace(/_menu/g, '_hidden') : '';
+		var sectplcode = sectpl != '' ? sectpl.split('<sec>') : Array('<br />', ': ', '<br />', '');
+		var string = sectplcode[0] + "{$recp[lang]}" + sectplcode[1] + '{$recp[grecaptcha]}' + sectplcode[2] + sectplcode[3];
+		$(showid).innerHTML = string;
+		setTimeout(function () {
+			$(onloadid).inner{if $recp[msgtype]}HTML{else}Text{/if} = data;
+			<!--{if $recp[failload]}-->
+			$(onloadid).innerHTML += '{$recp[failload]}';
+			<!--{/if}-->
+		}, {$recp[delaytime]});
+	}
+	window.grec_ol = function () {
+		display(onloadid);
+	}
+})()

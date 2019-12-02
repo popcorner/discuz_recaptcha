@@ -1,8 +1,8 @@
 <?php
 /**
  *	[reCAPTCHA(cdc_recaptcha.seccode_recaptcha)] (C)2019-2099 Powered by popcorner.
- *	Version: 1.0.2
- *	Date: 2019-11-20 20:18
+ *	Version: 1.1.0
+ *	Date: 2019-12-02 16:05
  *  Licensed under the Apache License, Version 2.0
  */
 
@@ -11,7 +11,7 @@ if(!defined('IN_DISCUZ')) {
 }
 class seccode_recaptcha {
 
-	public $version = '1.0.2';
+	public $version = '1.0.3';
 	public $name = 'recaptcha';
 	public $description = '';
 	public $copyright = 'popcorner';
@@ -39,25 +39,11 @@ class seccode_recaptcha {
 
 	public function make($idhash) {
 		global $_G;
-		if(!isset($_G['cache']['plugin'])) {
-			loadcache('plugin');
-		}
-		if(!$_G['cache']['plugin']['cdc_recaptcha']['pubkey'] || !$_G['cache']['plugin']['cdc_recaptcha']['privkey']) {
+		loadcache('cdc_recaptcha');
+		if(!isset($_G['cache']['cdc_recaptcha']) || !$_G['cache']['cdc_recaptcha'][0]) {
 			echo lang('plugin/cdc_recaptcha','nokey_error');
 		} else {
-			echo '<script src="'.$_G['siteurl'].'source/plugin/cdc_recaptcha/template/captcha'.substr(currentlang(),0,2).'.js" reload="1"></script>';
-			$gdomain = $_G['cache']['plugin']['cdc_recaptcha']['domain'];
-			$gdomain = $gdomain?intval($gdomain):2;
-			$return[0] = $this->domainlist[$gdomain];
-			$return[1] = $_G['cache']['plugin']['cdc_recaptcha']['cname']?$_G['cache']['plugin']['cdc_recaptcha']['cname']:lang('plugin/cdc_recaptcha','captcha');
-			$return[2] = $_G['cache']['plugin']['cdc_recaptcha']['pubkey'];
-			$return[3] = $_G['cache']['plugin']['cdc_recaptcha']['theme']?true:false;
-			$return[4] = $_G['cache']['plugin']['cdc_recaptcha']['size']?true:false;
-			$return[5] = intval($_G['cache']['plugin']['cdc_recaptcha']['tabindex']);
-			$return[6] = $_G['cache']['plugin']['cdc_recaptcha']['refresh']?true:false;
-			$return[7] = $_G['cache']['plugin']['cdc_recaptcha']['hlang'];
-			require_once DISCUZ_ROOT.'./source/plugin/mobile/json.class.php';
-			echo '<div id="recptc" class="'.$idhash.'" style="display:none;">'.CJSON::encode($return).'</div>';
+			echo $_G['cache']['cdc_recaptcha'][0].$idhash.$_G['cache']['cdc_recaptcha'][1];
 		}
 	}
 }

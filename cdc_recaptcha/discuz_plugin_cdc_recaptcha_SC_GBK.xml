@@ -2,7 +2,7 @@
 <root>
 	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
 	<item id="Version"><![CDATA[X3.4]]></item>
-	<item id="Time"><![CDATA[2019-11-20 21:14]]></item>
+	<item id="Time"><![CDATA[2019-12-02 16:05]]></item>
 	<item id="From"><![CDATA[Discuz! Board (https://addon.dismall.com/)]]></item>
 	<item id="Data">
 		<item id="plugin">
@@ -10,12 +10,38 @@
 			<item id="adminid"><![CDATA[0]]></item>
 			<item id="name"><![CDATA[reCAPTCHA验证码]]></item>
 			<item id="identifier"><![CDATA[cdc_recaptcha]]></item>
-			<item id="description"><![CDATA[Google reCAPTCHA验证码，全球安全性最高的验证码服务之一，安全免费。本插件支持在中国大陆地区也能正常使用Google的验证码服务。]]></item>
+			<item id="description"><![CDATA[Google reCAPTCHA验证码，全球安全性最高的验证码服务之一，安全免费。本插件支持在中国大陆地区正常使用Google的验证码服务。]]></item>
 			<item id="datatables"><![CDATA[]]></item>
 			<item id="directory"><![CDATA[cdc_recaptcha/]]></item>
 			<item id="copyright"><![CDATA[popcorner]]></item>
-			<item id="version"><![CDATA[1.0.2]]></item>
+			<item id="version"><![CDATA[1.1.0]]></item>
 			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[cache]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[mobile]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[28]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
 				<item id="seccode">
 					<item id="recaptcha">
 						<item id="name"><![CDATA[recaptcha]]></item>
@@ -67,6 +93,16 @@
 			</item>
 			<item id="4">
 				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[启用手机]]></item>
+				<item id="description"><![CDATA[开启此开关可以让系统自带的手机标准版和触屏版显示出验证码。不使用手机版的站可以关闭此开关。
+仅提供基本的可用性，且无法保证可以匹配第三方手机版。]]></item>
+				<item id="variable"><![CDATA[usemobile]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
 				<item id="title"><![CDATA[主题颜色]]></item>
 				<item id="description"><![CDATA[谷歌官方提供了2种验证码配色，可以根据自己的模板风格搭配选择。]]></item>
 				<item id="variable"><![CDATA[theme]]></item>
@@ -75,8 +111,8 @@
 				<item id="extra"><![CDATA[0 = 浅色
 1 = 深色]]></item>
 			</item>
-			<item id="5">
-				<item id="displayorder"><![CDATA[5]]></item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
 				<item id="title"><![CDATA[尺寸大小]]></item>
 				<item id="description"><![CDATA[谷歌官方提供了2种验证码尺寸，可以根据自己的模板风格搭配选择。]]></item>
 				<item id="variable"><![CDATA[size]]></item>
@@ -85,31 +121,116 @@
 				<item id="extra"><![CDATA[0 = 标准
 1 = 窄]]></item>
 			</item>
-			<item id="6">
-				<item id="displayorder"><![CDATA[6]]></item>
-				<item id="title"><![CDATA[切换顺序]]></item>
-				<item id="description"><![CDATA[正常情况下不要设置，此设置用于表单当中存在tab切换顺序错乱的情况下进行调整，填写数字即可。没有遇到类似问题请留空或填写0。]]></item>
-				<item id="variable"><![CDATA[tabindex]]></item>
-				<item id="type"><![CDATA[number]]></item>
-				<item id="value"><![CDATA[0]]></item>
-				<item id="extra"><![CDATA[]]></item>
-			</item>
 			<item id="7">
 				<item id="displayorder"><![CDATA[7]]></item>
+				<item id="title"><![CDATA[加载图标]]></item>
+				<item id="description"><![CDATA[开启此项，加载过程当中将会显示一个加载动画图标]]></item>
+				<item id="variable"><![CDATA[loadicon]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[0 = 不显示
+1 = 显示
+2 = 超时以后继续显示]]></item>
+			</item>
+			<item id="8">
+				<item id="displayorder"><![CDATA[8]]></item>
+				<item id="title"><![CDATA[帮助图标]]></item>
+				<item id="description"><![CDATA[开启此项，将会显示一个帮助图标，图标的具体作用由下面的配置项决定。]]></item>
+				<item id="variable"><![CDATA[helpicon]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[0 = 不显示
+1 = 始终显示
+2 = 加载超时后显示]]></item>
+			</item>
+			<item id="9">
+				<item id="displayorder"><![CDATA[9]]></item>
+				<item id="title"><![CDATA[帮助类型]]></item>
+				<item id="description"><![CDATA[选择帮助图标的作用，可以是一个链接，也可以是一段文字通过弹窗的方式展现。
+甚至可以指向显示弹窗，点击触发链接。]]></item>
+				<item id="variable"><![CDATA[helptype]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[3]]></item>
+				<item id="extra"><![CDATA[0 = 可点击的链接
+1 = 鼠标指向弹窗提示
+2 = 鼠标点击弹窗提示
+3 = 弹窗链接我全都要]]></item>
+			</item>
+			<item id="10">
+				<item id="displayorder"><![CDATA[10]]></item>
+				<item id="title"><![CDATA[帮助内容]]></item>
+				<item id="description"><![CDATA[当帮助类型包含弹窗时，弹窗内会显示在此填写的文字内容。
+手机版不支持此功能（又没有鼠标嘛）]]></item>
+				<item id="variable"><![CDATA[helpcont]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[点此查看帮助]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="11">
+				<item id="displayorder"><![CDATA[11]]></item>
+				<item id="title"><![CDATA[帮助链接]]></item>
+				<item id="description"><![CDATA[当帮助类型包含链接时，点击会跳转到在此填写的链接位置。站外链接需要包含http或https开头]]></item>
+				<item id="variable"><![CDATA[helplink]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[misc.php?mod=faq]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="12">
+				<item id="displayorder"><![CDATA[12]]></item>
+				<item id="title"><![CDATA[显示语种]]></item>
+				<item id="description"><![CDATA[reCAPTCHA验证码默认显示的是用户浏览器首选语言，并非和论坛一致。如果想强行让用户看到简体中文，请在此填写zh-CN。
+其他语言代号：https://developers.google.cn/recaptcha/docs/language]]></item>
+				<item id="variable"><![CDATA[hlang]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="13">
+				<item id="displayorder"><![CDATA[13]]></item>
 				<item id="title"><![CDATA[启用刷新]]></item>
-				<item id="description"><![CDATA[在极个别的情况下，部分用户可能会遇到验证码未正常加载或无法正常使用的情况，开启此按钮可以单独刷新验证码而不必刷新页面。]]></item>
+				<item id="description"><![CDATA[在极个别的情况下，部分用户可能会遇到验证码未正常加载或无法正常使用的情况，开启此按钮可以单独刷新验证码而不必刷新页面。
+手机版不支持此功能。]]></item>
 				<item id="variable"><![CDATA[refresh]]></item>
 				<item id="type"><![CDATA[radio]]></item>
 				<item id="value"><![CDATA[0]]></item>
 				<item id="extra"><![CDATA[]]></item>
 			</item>
-			<item id="8">
-				<item id="displayorder"><![CDATA[8]]></item>
-				<item id="title"><![CDATA[显示语种]]></item>
-				<item id="description"><![CDATA[reCAPTCHA验证码默认显示的是用户浏览器首选语言，并非和论坛一致。如果想强行让用户看到简体中文，请在此填写zh-CN。其他语言代号：https://developers.google.cn/recaptcha/docs/language]]></item>
-				<item id="variable"><![CDATA[hlang]]></item>
-				<item id="type"><![CDATA[text]]></item>
-				<item id="value"><![CDATA[]]></item>
+			<item id="14">
+				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[错误提示]]></item>
+				<item id="description"><![CDATA[个别用户遇到加载不出验证码的情况时，您可以在此输入一段内容展示给这些用户看。
+或者在此告知用户解决问题的办法（如关闭代理）]]></item>
+				<item id="variable"><![CDATA[errormsg]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[Google reCAPTCHA 验证码]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[15]]></item>
+				<item id="title"><![CDATA[内容格式]]></item>
+				<item id="description"><![CDATA[错误提示的内容格式，可以为纯文本或HTML。]]></item>
+				<item id="variable"><![CDATA[msgtype]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[0 = 纯文本
+1 = HTML]]></item>
+			</item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[16]]></item>
+				<item id="title"><![CDATA[报错延时]]></item>
+				<item id="description"><![CDATA[单位为毫秒（1000毫秒=1秒），超过此时间将会向用户显示出报错信息。您也可以设置为0让信息立即显示出来。]]></item>
+				<item id="variable"><![CDATA[delaytime]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[2000]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[17]]></item>
+				<item id="title"><![CDATA[切换顺序]]></item>
+				<item id="description"><![CDATA[正常情况下不要设置，此设置用于表单当中存在tab切换顺序错乱的情况下进行调整，填写数字即可。没有遇到类似问题请留空或填写0。]]></item>
+				<item id="variable"><![CDATA[tabindex]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[0]]></item>
 				<item id="extra"><![CDATA[]]></item>
 			</item>
 		</item>
@@ -118,9 +239,10 @@
 				<item id="recaptcha"><![CDATA[reCAPTCHA验证码]]></item>
 				<item id="captcha"><![CDATA[验证码]]></item>
 				<item id="nokey_error"><![CDATA[您尚未配置验证码相关密钥，请配置后再使用！]]></item>
+				<item id="noie"><![CDATA[您的浏览器版本过低，无法加载reCAPTCHA验证码，建议使用非IE浏览器。]]></item>
 			</item>
 		</item>
-        <item id="license"><![CDATA[[b]请注意：[/b]安装前请确认您有能力访问www.google.com，虽然本插件工作无需访问谷歌官网，但注册过程是需要的。
+		<item id="license"><![CDATA[[b]请注意：[/b]安装前请确认您有能力访问www.google.com，虽然本插件工作无需访问谷歌官网，但注册过程是需要的。
 
 安装后请及时访问谷歌官网注册（[url]https://www.google.com/recaptcha/admin[/url]），获取密钥并填入设置页，然后到后台-防灌水-验证设置，滚动到最下面选择reCAPTCHA验证码即可启用。
 注册流程：打开上述链接-谷歌账号登录-填写标签，类型选第二版，复选框（其他版本是无感认证，不适合Discuz使用），填写域名，勾选协议，提交。
@@ -149,6 +271,6 @@ including name, description and relevant URLs.
 本协议与Discuz授权协议无任何关联。
 上文为Apache协议授权的标准格式，如果看不懂可以搜索“详细介绍Apache License”（仅供理解，不能用于代替原文）
 特别声明：作者对“必须保留署名”的定义是不得去除程序内的任何一处作者署名，介绍及相关网址等作者个人信息，也不接受相关修改。]]></item>
-        <item id="intro"><![CDATA[本插件直接接入系统的验证码模块，因此验证相关设置请直接到系统后台-防灌水-验证设置，而不在插件这边。]]></item>
+		<item id="intro"><![CDATA[本插件直接接入系统的验证码模块，因此验证相关设置请直接到系统后台-防灌水-验证设置，而不在插件这边。]]></item>
 	</item>
 </root>

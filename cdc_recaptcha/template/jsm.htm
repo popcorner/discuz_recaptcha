@@ -1,0 +1,22 @@
+(function () {
+	var dgebd = function(dd){return document.getElementById(dd)};
+	if($('input[name=seccodehash]').length) {
+		var idhash = $('input[name=seccodehash]').val();
+		var onloadid = 'grecol_' + idhash;
+		var data = dgebd('recptc').innerText;
+		var l9 = document.createElement('script');
+		l9.src = '{$recp[gurl]}';
+		document.body.appendChild(l9);
+		var string = '{$recp[grecaptcha]}';
+		$('input[name=seccodeverify]').parent().html(string);
+		setTimeout(function () {
+			dgebd(onloadid).inner{if $recp[msgtype]}HTML{else}Text{/if} = data;
+			<!--{if $recp[failload]}-->
+			dgebd(onloadid).innerHTML += '{$recp[failload]}';
+			<!--{/if}-->
+		}, {$recp[delaytime]});
+		window.grec_ol = function () {
+			$('#'+onloadid).toggle();
+		}
+	}
+})()
