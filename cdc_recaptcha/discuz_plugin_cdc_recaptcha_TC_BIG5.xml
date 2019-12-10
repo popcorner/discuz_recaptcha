@@ -2,7 +2,7 @@
 <root>
 	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
 	<item id="Version"><![CDATA[X3.4]]></item>
-	<item id="Time"><![CDATA[2019-12-02 16:05]]></item>
+	<item id="Time"><![CDATA[2019-12-10 21:49]]></item>
 	<item id="From"><![CDATA[Discuz! Board (https://addon.dismall.com/)]]></item>
 	<item id="Data">
 		<item id="plugin">
@@ -14,7 +14,7 @@
 			<item id="datatables"><![CDATA[]]></item>
 			<item id="directory"><![CDATA[cdc_recaptcha/]]></item>
 			<item id="copyright"><![CDATA[popcorner]]></item>
-			<item id="version"><![CDATA[1.1.0]]></item>
+			<item id="version"><![CDATA[1.1.1]]></item>
 			<item id="__modules">
 				<item id="0">
 					<item id="name"><![CDATA[cache]]></item>
@@ -242,7 +242,7 @@
 				<item id="noie"><![CDATA[您的瀏覽器版本過低，無法載入reCAPTCHA驗證碼，建議使用非IE瀏覽器。]]></item>
 			</item>
 		</item>
-        <item id="license"><![CDATA[[b]請注意：[/b]安裝前請確認您有能力訪問www.google.com，雖然本外掛程式工作無需訪問谷歌官網，但註冊過程是需要的。
+		<item id="license"><![CDATA[[b]請注意：[/b]安裝前請確認您有能力訪問www.google.com，雖然本外掛程式工作無需訪問谷歌官網，但註冊過程是需要的。
 
 安裝後請及時訪問谷歌官網註冊（[url]https://www.google.com/recaptcha/admin[/url]），獲取金鑰並填入設置頁，然後到後臺-防灌水-驗證設置，滾動到最下面選擇reCAPTCHA驗證碼即可啟用。
 註冊流程：打開上述連結-谷歌帳號登錄-填寫標籤，類型選第二版，核取方塊（其他版本是無感認證，不適合Discuz使用），填寫功能變數名稱，勾選協定，提交。
@@ -271,6 +271,6 @@ including name, description and relevant URLs.
 本協定與Discuz授權協定無任何關聯。
 上文為Apache協定授權的標準格式，如果看不懂可以搜索「詳細介紹Apache License」（僅供理解，不能用於代替原文）
 特別聲明：作者對「必須保留署名」的定義是不得去除程式內的任何一處作者署名，介紹及相關網址等作者個人資訊，也不接受相關修改。]]></item>
-        <item id="intro"><![CDATA[本外掛程式直接接入系統的驗證碼模組，因此驗證相關設置請直接到系統後臺-防灌水-驗證設置，而不在外掛程式這邊。]]></item>
+		<item id="intro"><![CDATA[本外掛程式直接接入系統的驗證碼模組，因此驗證相關設置請直接到系統後臺-防灌水-驗證設置，而不在外掛程式這邊。]]></item>
 	</item>
 </root>

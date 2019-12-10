@@ -1,8 +1,8 @@
 <?php
 /**
  *	[reCAPTCHA(cdc_recaptcha.seccode_recaptcha)] (C)2019-2099 Powered by popcorner.
- *	Version: 1.1.0
- *	Date: 2019-12-02 16:05
+ *	Version: 1.1.1
+ *	Date: 2019-12-10 21:49
  *  Licensed under the Apache License, Version 2.0
  */
 
@@ -11,7 +11,7 @@ if(!defined('IN_DISCUZ')) {
 }
 class seccode_recaptcha {
 
-	public $version = '1.0.3';
+	public $version = '1.1.1';
 	public $name = 'recaptcha';
 	public $description = '';
 	public $copyright = 'popcorner';

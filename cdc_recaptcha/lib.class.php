@@ -40,7 +40,7 @@ function recaptchajsparams($mobile = 0) {
 		}
 		$helpicon = '<a class="xi2" style="margin-left:6px"'.$helpicona[0].'><img src="'.$_G['style']['imgdir'].'/info_small.gif" class="vm"'.$helpicona[1].'></a>';
 	}
-	$return['grecaptcha'] = '<div class="g-recaptcha" data-sitekey="'.$var['pubkey'].'"'.$addi.'></div>';
+	$return['grecaptcha'] = '<input name="seccodehash" type="hidden" value="\' + idhash + \'" /><span id="checkseccodeverify_\' + idhash + \'" style="display:none"><img src="'.$_G['style']['imgdir'].'/check_right.gif" width="16" height="16" class="vm"></span><input name="seccodeverify" id="seccodeverify_\' + idhash + \'" type="hidden" value="\' + idhash + \'" /><div class="g-recaptcha" data-sitekey="'.$var['pubkey'].'"'.$addi.'></div>';
 	$return['grecaptcha'] .= '<span id="\' + onloadid + \'">';
 	$return['grecaptcha'] .= intval($var['loadicon'])?'<img src="'.$_G['style']['imgdir'].'/loading.gif" class="vm">':'';
 	$return['grecaptcha'] .= '</span>';
