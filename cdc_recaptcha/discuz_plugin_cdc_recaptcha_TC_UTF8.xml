@@ -2,7 +2,7 @@
 <root>
 	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
 	<item id="Version"><![CDATA[X3.4]]></item>
-	<item id="Time"><![CDATA[2019-12-10 21:49]]></item>
+	<item id="Time"><![CDATA[2019-12-28 17:08]]></item>
 	<item id="From"><![CDATA[Discuz! Board (https://addon.dismall.com/)]]></item>
 	<item id="Data">
 		<item id="plugin">
@@ -14,7 +14,7 @@
 			<item id="datatables"><![CDATA[]]></item>
 			<item id="directory"><![CDATA[cdc_recaptcha/]]></item>
 			<item id="copyright"><![CDATA[popcorner]]></item>
-			<item id="version"><![CDATA[1.1.1]]></item>
+			<item id="version"><![CDATA[1.1.2]]></item>
 			<item id="__modules">
 				<item id="0">
 					<item id="name"><![CDATA[cache]]></item>
@@ -197,6 +197,15 @@
 			</item>
 			<item id="14">
 				<item id="displayorder"><![CDATA[14]]></item>
+				<item id="title"><![CDATA[自動刷新]]></item>
+				<item id="description"><![CDATA[AJAX的表單提交以後，點擊的驗證碼就會因為用過一次而失效了。 開啟本功能以後會在表單提交之後自動刷新一次。]]></item>
+				<item id="variable"><![CDATA[autoref]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[1]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="15">
+				<item id="displayorder"><![CDATA[15]]></item>
 				<item id="title"><![CDATA[錯誤提示]]></item>
 				<item id="description"><![CDATA[個別使用者遇到載入不出驗證碼的情況時，您可以在此輸入一段內容展示給這些使用者看。
 或者在此告知使用者解決問題的辦法（如關閉代理）]]></item>
@@ -205,8 +214,8 @@
 				<item id="value"><![CDATA[Google reCAPTCHA 驗證碼]]></item>
 				<item id="extra"><![CDATA[]]></item>
 			</item>
-			<item id="15">
-				<item id="displayorder"><![CDATA[15]]></item>
+			<item id="16">
+				<item id="displayorder"><![CDATA[16]]></item>
 				<item id="title"><![CDATA[內容格式]]></item>
 				<item id="description"><![CDATA[錯誤提示的內容格式，可以為純文字或HTML。]]></item>
 				<item id="variable"><![CDATA[msgtype]]></item>
@@ -215,8 +224,8 @@
 				<item id="extra"><![CDATA[0 = 純文字
 1 = HTML]]></item>
 			</item>
-			<item id="16">
-				<item id="displayorder"><![CDATA[16]]></item>
+			<item id="17">
+				<item id="displayorder"><![CDATA[17]]></item>
 				<item id="title"><![CDATA[報錯延時]]></item>
 				<item id="description"><![CDATA[單位為毫秒（1000毫秒=1秒），超過此時間將會向使用者顯示出報錯資訊。 您也可以設置為0讓資訊立即顯示出來。]]></item>
 				<item id="variable"><![CDATA[delaytime]]></item>
@@ -224,8 +233,8 @@
 				<item id="value"><![CDATA[2000]]></item>
 				<item id="extra"><![CDATA[]]></item>
 			</item>
-			<item id="17">
-				<item id="displayorder"><![CDATA[17]]></item>
+			<item id="18">
+				<item id="displayorder"><![CDATA[18]]></item>
 				<item id="title"><![CDATA[切換順序]]></item>
 				<item id="description"><![CDATA[正常情況下不要設置，此設置用於表單當中存在tab切換順序錯亂的情況下進行調整，填寫數位即可。 沒有遇到類似問題請留空或填寫0。]]></item>
 				<item id="variable"><![CDATA[tabindex]]></item>

@@ -17,6 +17,9 @@
 		}, {$recp[delaytime]});
 		window.grec_ol = function () {
 			$('#'+onloadid).toggle();
-		}
+		};
+		<!--{if $recp[autoref]}-->
+		$('input[type=submit],form input[type=button],form button').click(function(){setTimeout(function(){grecaptcha.reset()},500)});
+		<!--{/if}-->
 	}
 })()

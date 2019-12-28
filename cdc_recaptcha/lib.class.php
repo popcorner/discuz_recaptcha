@@ -18,10 +18,10 @@ function recaptchajsparams($mobile = 0) {
 	$return['lang'] = $var['cname']?dhtmlspecialchars($var['cname']):lang('plugin/cdc_recaptcha','captcha');
 	$return['noie'] = lang('plugin/cdc_recaptcha','noie');
 
-	$qrr['onload'] = 'grec_ol';
 	if($var['hlang']) {
 		$qrr['hl'] = $var['hlang'];
 	}
+	$qrr['onload'] = 'grec_ol';
 	$gdomain = $var['domain'];
 	$gdomain = $gdomain?intval($gdomain):2;
 	$return['gurl'] = 'https://'.$domainlist[$gdomain].'/recaptcha/api.js?'.http_build_query($qrr);
@@ -53,6 +53,7 @@ function recaptchajsparams($mobile = 0) {
 	$return['failload'] .= (intval($var['helpicon'])==2)?$helpicon:'';
 	$return['delaytime'] = intval($var['delaytime']);
 	$return['msgtype'] = $var['msgtype'];
+	$return['autoref'] = $var['autoref'];
 	return $return;
 }
 
@@ -72,7 +73,7 @@ function recaptchaphpparams() {
 		}
 		$return =  array('<script src="'.$jspath.'recaptcha.js?'.$_G['style']['verhash'].'" reload="1"></script><div id="recptc" class="','" style="display:none;">'.dhtmlspecialchars($var['errormsg']).'</div>','');
 		if($var['usemobile']) {
-			$return[2] = '<div id="recptc" style="display:none;">'.dhtmlspecialchars($var['errormsg']).'</div><script src="'.$jspath.'recaptcham.js"></script>';
+			$return[2] = '<div id="recptc" style="display:none;">'.dhtmlspecialchars($var['errormsg']).'</div><script src="'.$jspath.'recaptcham.js?'.$_G['style']['verhash'].'"></script>';
 		}
 		return $return;
 	}

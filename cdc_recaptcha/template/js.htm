@@ -1,12 +1,13 @@
 (function () {
-	var idhash = $('recptc').className;
+	var recptc = $('recptc');
+	var idhash = recptc.className;
 	var showid = 'seccode_' + idhash;
 	var onloadid = 'grecol_' + idhash;
 	if (BROWSER.ie && BROWSER.ie < 10) {
 		$('v' + showid).innerHTML = '{$recp[noie]}';
 	} else {
-		var data = $('recptc').innerText;
-		appendscript('{$recp[gurl]}', '', 1);
+		var data = recptc.innerText;
+		appendscript('{$recp[gurl]}'+idhash, '', 1);
 		var sectpl = seccheck_tpl[idhash] != '' ? seccheck_tpl[idhash].replace(/<hash>/g, 'code' + idhash).replace(/_menu/g, '_hidden') : '';
 		var sectplcode = sectpl != '' ? sectpl.split('<sec>') : Array('<br />', ': ', '<br />', '');
 		var string = sectplcode[0] + "{$recp[lang]}" + sectplcode[1] + '{$recp[grecaptcha]}' + sectplcode[2] + sectplcode[3];
@@ -17,8 +18,15 @@
 			$(onloadid).innerHTML += '{$recp[failload]}';
 			<!--{/if}-->
 		}, {$recp[delaytime]});
+		<!--{if $recp[autoref]}-->
+		var r9=$('seccodeverify_'+idhash).form;
+		if(r9&&!r9.hasAttribute('data-recaptcha')){
+			r9.setAttribute('data-recaptcha',idhash);
+			r9.addEventListener('submit',function(){setTimeout(function(){updateseccode(idhash)},500)});
+		}
+		<!--{/if}-->
 	}
-	window.grec_ol = function () {
+	window['grec_ol'+idhash] = function () {
 		display(onloadid);
 	}
 })()
