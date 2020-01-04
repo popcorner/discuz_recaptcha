@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2020-01-04 18:27]]></item>
+	<item id="From"><![CDATA[Discuz! Board (https://addon.dismall.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[reCAPTCHAÅçÃÒ½Xv3]]></item>
+			<item id="identifier"><![CDATA[cdc_recaptchav3]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[cdc_recaptchav3/]]></item>
+			<item id="copyright"><![CDATA[popcorner]]></item>
+			<item id="version"><![CDATA[0.0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[cache]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[ªA°È¥\¯àÅÜ¼Æ¦WºÙ]]></item>
+				<item id="description"><![CDATA[¦¹¥\¯àÅÜ¼Æ¦WºÙ¦P®É¨Ñ¨Ï¥ÎªÌ©MªA°ÈºÝ¨Ï¥Î¡A½Ð°È¥²¥J²Ó¾\Åª¿ï¶µ¡C­Y¥X²{µLªk¥¿±`¤u§@ªº±¡ªp¥i¥H¹Á¸Õ§ó´«¥\¯àÅÜ¼Æ¦WºÙ¸Ñ¨M¡C]]></item>
+				<item id="variable"><![CDATA[domain]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[1 = www.google.com¡]¹w³]ªA°È¥\¯àÅÜ¼Æ¦WºÙ¡A¦ý¤¤°ê¤j³°¦a°Ï¤£¥i¥Î¡A©x¤è«ü©w¡^
+2 = www.recaptcha.net¡]¥þ²yªA°È¥\¯àÅÜ¼Æ¦WºÙ¡A¤¤°ê¤j³°¦a°Ï¥i¥Î¡A¨¦ºq©x¤è¤åÀÉ±ÀÂË¨Ï¥Î¡^
+3 = recaptcha.net¡]¥þ²yªA°È¥\¯àÅÜ¼Æ¦WºÙ¡A¤¤°ê¤j³°¦a°Ï¥i¥Î¡A§óÂ²µu¡^
+4 = recaptcha.google.cn¡]¤¤°êªA°È¥\¯àÅÜ¼Æ¦WºÙ¡Aª½³q¨¦ºq¤¤°ê¡A¦ý¤¤°ê¤j³°¥H¥~¨Ï¥ÎªÌ¼vÅT¥¼ª¾¡^]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[Åã¥Ü¦WºÙ]]></item>
+				<item id="description"><![CDATA[ÅçÃÒ½X«e¤èÅã¥Üªº¤å¦r¦WºÙ¡A¯dªÅ¹w³]¬°¡uÅçÃÒ½X¡v¡C]]></item>
+				<item id="variable"><![CDATA[cname]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[ªA°È¤½¶}ª÷Æ_]]></item>
+				<item id="description"><![CDATA[reCAPTCHAª÷Æ_ªº¤½¶}ª÷Æ_³¡¤À¡A½Ð¨ìGoogle©xºô¥Ó½Ð¡Chttps://www.google.com/recaptcha/admin]]></item>
+				<item id="variable"><![CDATA[pubkey]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[ªA°È¨p±Kª÷Æ_]]></item>
+				<item id="description"><![CDATA[reCAPTCHAª÷Æ_ªº¨p±Kª÷Æ_³¡¤À¡A½Ð¨ìGoogle©xºô¥Ó½Ð¡C ½Ð§´µ½«OºÞ¡A¤£­n¬ªÅS¡I]]></item>
+				<item id="variable"><![CDATA[privkey]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[¤À¼Æ½T©w]]></item>
+				<item id="description"><![CDATA[±Ò¥Î¦¹¶µ¡A«h·|®Ú¾Ú¨¦ºq¹ï¨Ï¥ÎªÌªº¥´¤À¨Ó§PÂ_¬O§_³q¹LÅçÃÒ¡C
+Ãö³¬¦¹¶µ¡A¥u­n¶Ç¦^­È¥¿½T´N³q¹LÅçÃÒ¡AµL½×¤À¼Æ°ª§C¡C]]></item>
+				<item id="variable"><![CDATA[usescore]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[§P©wìH­È]]></item>
+				<item id="description"><![CDATA[¿é¤J¤@­Ó1-9¤§¶¡ªº¼Æ¦ì¡A¹ïÀ³0.1-0.9ªº¥´¤À¡C ¥i¥ý³]¬°5¡C
+¤j©óµ¥©ó¸Ó¼Æ¦ìµø¬°³q¹L¡A¤p©ó¸Ó¼Æ¦ì±N³Q©Úµ´¡C]]></item>
+				<item id="variable"><![CDATA[threshold]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[Åã¥Ü»yºØ]]></item>
+				<item id="description"><![CDATA[reCAPTCHAÅçÃÒ½X¹w³]Åã¥Üªº¬O¨Ï¥ÎªÌÂsÄý¾¹­º¿ï»y¨¥¡A¨Ã«D©M½×¾Â¤@­P¡C ¦pªG·Q±j¦æÅý¨Ï¥ÎªÌ¬Ý¨ìÁcÅé¤¤¤å¡A½Ð¦b¦¹¶ñ¼gzh-HK(­»´ä)©Îzh-TW¡]»OÆW¡^¡C 
+¨ä¥L»y¨¥¥N¸¹¡Ghttps://developers.google.cn/recaptcha/docs/language]]></item>
+				<item id="variable"><![CDATA[hlang]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="recaptchav3"><![CDATA[reCAPTCHAÅçÃÒ½Xv3]]></item>
+				<item id="captcha"><![CDATA[ÅçÃÒ½X]]></item>
+				<item id="nokey_error"><![CDATA[±z©|¥¼°t¸mÅçÃÒ½X¬ÛÃöª÷Æ_¡A½Ð°t¸m«á¦A¨Ï¥Î¡I]]></item>
+				<item id="noie"><![CDATA[±zªºÂsÄý¾¹ª©¥»¹L§C¡AµLªk¸ü¤JreCAPTCHAÅçÃÒ½X¡A«ØÄ³¨Ï¥Î«DIEÂsÄý¾¹¡C]]></item>
+				<item id="vsuccess"><![CDATA[ÅçÃÒ¦¨¥\]]></item>
+				<item id="vfail"><![CDATA[ÅçÃÒ¥¢±Ñ]]></item>
+				<item id="vretry"><![CDATA[­«¸Õ]]></item>
+				<item id="loading"><![CDATA[½Ðµy­Ô...]]></item>
+			</item>
+		</item>
+	</item>
+</root>

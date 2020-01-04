@@ -1,0 +1,27 @@
+(function () {
+	var recptc = $('recptc');
+	var idhash = recptc.className;
+	var rcaction = recptc.innerText.replace('::', '/');
+	var showid = 'seccode_' + idhash;
+	if (BROWSER.ie && BROWSER.ie < 10) {
+		$('v' + showid).innerHTML = '{$recp[noie]}';
+	} else {
+		var data = recptc.innerText;
+		appendscript('{$recp[gurl]}' + idhash, '', 1);
+		var sectpl = seccheck_tpl[idhash] != '' ? seccheck_tpl[idhash].replace(/<hash>/g, 'code' + idhash).replace(/_menu/g, '_hidden') : '';
+		var sectplcode = sectpl != '' ? sectpl.split('<sec>') : Array('<br />', ': ', '<br />', '');
+		var string = sectplcode[0] + "{$recp[lang]}" + sectplcode[1] + '<input name="seccodehash" type="hidden" value="' + idhash + '" /><input name="seccodeverify" id="seccodeverify_' + idhash + '" type="hidden" /><span id="checkseccodeverify_' + idhash + '"><img src="' + IMGDIR + '/loading.gif" class="vm"> {$recp[loading]}</span>' + sectplcode[2] + sectplcode[3];
+		$(showid).innerHTML = string;
+	}
+	window['grec_ol' + idhash] = function () {
+		setTimeout(function () {
+			grecaptcha.ready(function () {
+				grecaptcha.execute('{$recp[pubkey]}', { action: rcaction }).then(function (token) {
+					ajaxget('plugin.php?id=cdc_recaptchav3:check&update=' + token + '&idhash=' + idhash, 'checkseccodeverify_' + idhash);
+				});
+			});
+		}, parseInt(Math.random()*1000));
+
+	}
+}
+)()

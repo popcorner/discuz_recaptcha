@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2020-01-04 18:27]]></item>
+	<item id="From"><![CDATA[Discuz! Board (https://addon.dismall.com/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[reCAPTCHA验证码v3]]></item>
+			<item id="identifier"><![CDATA[cdc_recaptchav3]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[cdc_recaptchav3/]]></item>
+			<item id="copyright"><![CDATA[popcorner]]></item>
+			<item id="version"><![CDATA[0.0.1]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[cache]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[服务域名]]></item>
+				<item id="description"><![CDATA[此域名同时供用户和服务端使用，请务必仔细阅读选项。若出现无法正常工作的情况可以尝试更换域名解决。]]></item>
+				<item id="variable"><![CDATA[domain]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[1 = www.google.com（默认服务域名，但中国大陆地区不可用，官方指定）
+2 = www.recaptcha.net（全球服务域名，中国大陆地区可用，谷歌官方文档推荐使用）
+3 = recaptcha.net（全球服务域名，中国大陆地区可用，更简短）
+4 = recaptcha.google.cn（中国服务域名，直通谷歌中国，但中国大陆以外用户影响未知）]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[显示名称]]></item>
+				<item id="description"><![CDATA[验证码前方显示的文字名称，留空默认为“验证码”。]]></item>
+				<item id="variable"><![CDATA[cname]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[服务公钥]]></item>
+				<item id="description"><![CDATA[reCAPTCHA密钥的公钥部分，请到Google官网申请。https://www.google.com/recaptcha/admin]]></item>
+				<item id="variable"><![CDATA[pubkey]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[服务私钥]]></item>
+				<item id="description"><![CDATA[reCAPTCHA密钥的私钥部分，请到Google官网申请。请妥善保管，不要泄露！]]></item>
+				<item id="variable"><![CDATA[privkey]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[分数判定]]></item>
+				<item id="description"><![CDATA[启用此项，则会根据谷歌对用户的打分来判断是否通过验证。
+关闭此项，只要返回值正确就通过验证，无论分数高低。]]></item>
+				<item id="variable"><![CDATA[usescore]]></item>
+				<item id="type"><![CDATA[radio]]></item>
+				<item id="value"><![CDATA[0]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[5]]></item>
+				<item id="title"><![CDATA[判定阈值]]></item>
+				<item id="description"><![CDATA[输入一个1-9之间的数字，对应0.1-0.9的打分。可先设为5。
+大于等于该数字视为通过，小于该数字将被拒绝。]]></item>
+				<item id="variable"><![CDATA[threshold]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[5]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[6]]></item>
+				<item id="title"><![CDATA[显示语种]]></item>
+				<item id="description"><![CDATA[reCAPTCHA在网页右下角的弹框默认显示的是用户浏览器首选语言，并非和论坛一致。如果想强行让用户看到简体中文，请在此填写zh-CN。
+其他语言代号：https://developers.google.cn/recaptcha/docs/language]]></item>
+				<item id="variable"><![CDATA[hlang]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="recaptchav3"><![CDATA[reCAPTCHA验证码v3]]></item>
+				<item id="captcha"><![CDATA[验证码]]></item>
+				<item id="nokey_error"><![CDATA[您尚未配置验证码相关密钥，请配置后再使用！]]></item>
+				<item id="noie"><![CDATA[您的浏览器版本过低，无法加载reCAPTCHA验证码，建议使用非IE浏览器。]]></item>
+				<item id="vsuccess"><![CDATA[验证成功]]></item>
+				<item id="vfail"><![CDATA[验证失败]]></item>
+				<item id="vretry"><![CDATA[重试]]></item>
+				<item id="loading"><![CDATA[请稍候...]]></item>
+			</item>
+		</item>
+	</item>
+</root>
