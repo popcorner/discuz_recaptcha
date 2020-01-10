@@ -19,7 +19,7 @@
 			$('#'+onloadid).toggle();
 		};
 		<!--{if $recp[autoref]}-->
-		$('input[type=submit],form input[type=button],form button').click(function(){setTimeout(function(){grecaptcha.reset()},500)});
+		$('input[type=submit],form input[type=button],form button').click(function(){setTimeout(function(){grecaptcha.reset()}, {$recp[refdelay]})});
 		<!--{/if}-->
 	}
 })()

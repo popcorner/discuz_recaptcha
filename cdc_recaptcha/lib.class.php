@@ -52,6 +52,7 @@ function recaptchajsparams($mobile = 0) {
 	$return['failload'] = (intval($var['loadicon'])==2)?'<img src="'.$_G['style']['imgdir'].'/loading.gif" class="vm">':'';
 	$return['failload'] .= (intval($var['helpicon'])==2)?$helpicon:'';
 	$return['delaytime'] = intval($var['delaytime']);
+	$return['refdelay'] = intval($var['refdelay']);
 	$return['msgtype'] = $var['msgtype'];
 	$return['autoref'] = $var['autoref'];
 	return $return;

@@ -22,7 +22,7 @@
 		var r9=$('seccodeverify_'+idhash).form;
 		if(r9&&!r9.hasAttribute('data-recaptcha')){
 			r9.setAttribute('data-recaptcha',idhash);
-			r9.addEventListener('submit',function(){setTimeout(function(){updateseccode(idhash)},500)});
+			r9.addEventListener('submit',function(){setTimeout(function(){updateseccode(idhash)}, {$recp[refdelay]})});
 		}
 		<!--{/if}-->
 	}
